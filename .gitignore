@@ -1,0 +1,4 @@
+flvenv
+*.pyc
+.env
+sqlite.db
