@@ -1,4 +1,5 @@
 flvenv
 *.pyc
 .env
-sqlite.db
+sqlite-dev.db
+sqlite-test.db
