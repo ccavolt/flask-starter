@@ -1,15 +1,31 @@
+{% block html %}
 <!DOCTYPE html>
 <html lang='en-US'>
-  {% block head %}
-  <head>
-    <meta charset='utf-8'>
-      <title>{% block title %}Hello, world!{% endblock title %}</title>
-      {% block css %}{% endblock css %}
-  </head>
-  {% endblock head %}
 
-  {% block body %}
-    {% block nav %}{% endblock nav %}
-  {% endblock body %}
-  {% block js %}{% endblock js %}
+  <head>
+    {% block head %}
+    {% block meta %}<meta charset='utf-8'>{% endblock meta %}
+    <title>{% block title %}Hello, world!{% endblock title %}</title>
+    {% block css %}{% endblock css %}
+    {% endblock head %}
+  </head>
+
+  <body>
+    {% block body %}
+    <header>
+      {% block header %}
+      <nav>
+        {% block nav %}{% endblock nav %}
+      </nav>
+      {% endblock header %}
+    </header>
+    {% block main %}{% endblock main %}
+    <footer>
+      {% block footer %}{% endblock footer %}
+    </footer>
+    {% endblock body %}
+    {% block js %}{% endblock js %}
+  </body>
+
 </html>
+{% endblock html %}
