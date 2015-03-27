@@ -1,0 +1,11 @@
+{
+  "name": "flask-starter",
+  "version": "0.0.0",
+  "description": "Flask Starter",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/corbincavolt/flask-starter.git"
+  },
+  "private": true,
+  "dependencies": {}
+}

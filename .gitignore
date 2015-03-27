@@ -3,3 +3,6 @@ flvenv
 .env
 sqlite-dev.db
 sqlite-test.db
+bower_components
+node_modules
+gems
