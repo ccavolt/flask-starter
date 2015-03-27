@@ -11,6 +11,9 @@ SQLAlchemy==0.9.9
 WTForms==2.0.2
 Werkzeug==0.10.1
 alembic==0.7.5.post2
+certifi==14.05.14
 gunicorn==19.3.0
 itsdangerous==0.24
+livereload==2.3.2
 psycopg2==2.6
+tornado==4.1

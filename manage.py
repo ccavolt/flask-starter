@@ -21,6 +21,14 @@ def make_shell_context():
 manager.add_command('shell', Shell(make_context=make_shell_context))
 manager.add_command('db', MigrateCommand)
 
+@manager.command
+def liveserver(port=5000):
+    from livereload import Server
+    server = Server(app.wsgi_app)
+    server.watch('app/templates')
+    server.watch('app/static')
+    server.serve(port=port)
+    
 
 if __name__ == '__main__':
     manager.run()
